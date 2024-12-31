@@ -22,5 +22,21 @@
 .grid-collage {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 3px;grid-template-rows: repeat(2,97.5px);
+  gap: 3px;
+  grid-template-rows: repeat(2, 97.5px);
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 576px) {
+  .row {
+    flex-direction: column;
+  }
+  .row {
+    height: auto;
+  }
+  .grid-collage {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
